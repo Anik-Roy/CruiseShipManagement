@@ -71,9 +71,7 @@ public class CruiseJourney {
         List<CruiseShip> ll = current.getShipList();
         CruiseJourney cloneJourney = new CruiseJourney();
 
-        for(CruiseShip l : ll) {
-            cloneJourney.shipList.add(l);
-        }
+        cloneJourney.shipList.addAll(ll);
         return cloneJourney;
     }
 
